@@ -59,6 +59,19 @@ dataset/
 - Transfer Learning: ImageNet pretrained weights
 - Task: Binary Image Classification
 
+## Training Parameters
+
+- Partial fine-tuning -> Training the final residual block (`layer4`) and the final fully connected classification layer (`fc`)
+- Width & Height = 224 * 224
+- Batch size = 12
+- Epochs = 20
+- Learning rate=1e-5
+
+### Results
+![Confusion Matrix](classification-results/confusion_matrix.png)
+
+![ROC curve](classification-results/ROC_curve.png)
+
 **Trained model:** [View model](https://www.kaggle.com/models/atenazare/finetuned-resnet18-chestxray/PyTorch/default/1)
 ---
 
@@ -127,6 +140,8 @@ The notebook generates visual explanations including:
 - Occlusion attribution
 - Overlay visualizations
 
+![sample](xai-results/a2xai_comparison-20.png)
+![sample](xai-results/xai_comparison-158.png)
 ---
 
 ## Future Improvements
