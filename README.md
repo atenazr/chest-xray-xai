@@ -25,7 +25,6 @@ The notebook covers the complete workflow from data preprocessing and model trai
   - Grad-CAM
   - Integrated Gradients
   - Occlusion
-  - Layer-wise Relevance Propagation (LRP)
 
 ---
 
@@ -93,17 +92,6 @@ Measures feature importance by systematically masking different image regions an
 
 ---
 
-## Evaluation
-
-The notebook includes:
-
-- Accuracy
-- Precision
-- Confusion Matrix
-- Classification Report
-
----
-
 ## Technologies
 
 - Python
@@ -124,7 +112,8 @@ The notebook includes:
 .
 ├── Chest_Xray_Classification.ipynb
 ├── README.md
-├── results/
+├── classification-results/
+├── classification-xai/
 ```
 
 ---
